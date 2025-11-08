@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodie - Forgot Password</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .auth-main {
+            min-height: calc(100vh - 14vh);
+            display: grid;
+            place-items: center;
+            padding: 2rem 1.5rem;
+            background-color: var(--eye-ball);
+        }
+        .auth-card {
+            width: min(420px, 100%);
+            background: var(--pure-white);
+            padding: 2rem;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.12) 0 5px 30px;
+        }
+        .input-box {
+            background-color: #f6f6f6;
+            margin-bottom: 1rem;
+            padding: 12px 16px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .input-box input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 15px;
+        }
+        .btn.auth-btn {
+            width: 100%;
+            text-align: center;
+            padding: 12px 0;
+        }
+        .extra-links {
+            margin-top: 1rem;
+        }
+        .extra-links a {
+            color: var(--gold-finger);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="#" class="logo">Foodie.</a>
+
+            <ul class="navlist flex gap-3">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+
+            <div class="desktop-action flex gap-2">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+                <a href="login.html" class="btn">Sign in &nbsp;<i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+            </div>
+
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="login.html" class="btn">Sign in &nbsp;<i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <main class="auth-main">
+        <div class="auth-card">
+            <h2>Forgot Password?</h2>
+            <p>Enter your registered email to receive reset instructions.</p>
+
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" required />
+            </div>
+
+            <a href="login.html" class="btn auth-btn">Send Reset Link</a>
+
+            <div class="extra-links">
+                <a href="login.html">Back to Login</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- JS: mobile menu toggle -->
+    <script>
+        const burger = document.querySelector(".hamburger");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        burger.addEventListener("click", () => mobileMenu.classList.toggle("mobile-menu-active"));
+    </script>
+
+</body>
+</html>
