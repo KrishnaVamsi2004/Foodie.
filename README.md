@@ -9,3 +9,6 @@ index
 Structure: index.html, Login.html, Signup.html, Forget.html, plain.html, style.css, main.js, products.json, and Images/.
 
 Notes on current implementation: inline Swiper/cart logic and embedded JSON block with an option to switch to products.json.
+
+
+# Deploy Link: https://foodie-vamsi.netlify.app/
